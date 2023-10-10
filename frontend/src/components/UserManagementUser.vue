@@ -16,7 +16,7 @@
         </v-card-title >        
 
         <v-card-text>
-            <Password offline label="비밀번호" v-model="value.password" :editMode="editMode" @change="change"/>
+            <String label="비밀번호" v-model="value.password" :editMode="editMode" :inputUI="''"/>
             <String label="이름" v-model="value.name" :editMode="editMode" :inputUI="''"/>
             <Email offline label="이메일" v-model="value.email" :editMode="editMode" @change="change"/>
         </v-card-text>

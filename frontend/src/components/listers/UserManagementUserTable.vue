@@ -89,7 +89,7 @@
             this.newValue = {
                 'password': '',
                 'name': '',
-                'email': '',
+                'email': {},
             }
         },
         methods: {

@@ -19,10 +19,11 @@ public class User {
     @Id
     private String id;
 
-    private Password password;
+    private String password;
 
     private String name;
 
+    @Embedded
     private Email email;
 
     @PostPersist

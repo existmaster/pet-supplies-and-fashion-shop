@@ -111,7 +111,7 @@
             me.newValue = {
                 'password': '',
                 'name': '',
-                'email': '',
+                'email': {},
             }
         },
         methods:{
