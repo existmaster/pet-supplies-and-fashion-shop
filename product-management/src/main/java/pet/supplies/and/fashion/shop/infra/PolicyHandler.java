@@ -22,39 +22,5 @@ public class PolicyHandler {
 
     @StreamListener(KafkaProcessor.INPUT)
     public void whatever(@Payload String eventString) {}
-
-    @StreamListener(
-        value = KafkaProcessor.INPUT,
-        condition = "headers['type']=='ProductRegistered'"
-    )
-    public void wheneverProductRegistered_ProductSearchPolicy(
-        @Payload ProductRegistered productRegistered
-    ) {
-        ProductRegistered event = productRegistered;
-        System.out.println(
-            "\n\n##### listener ProductSearchPolicy : " +
-            productRegistered +
-            "\n\n"
-        );
-        // Sample Logic //
-
-    }
-
-    @StreamListener(
-        value = KafkaProcessor.INPUT,
-        condition = "headers['type']=='ProductRegistered'"
-    )
-    public void wheneverProductRegistered_ProductViewPolicy(
-        @Payload ProductRegistered productRegistered
-    ) {
-        ProductRegistered event = productRegistered;
-        System.out.println(
-            "\n\n##### listener ProductViewPolicy : " +
-            productRegistered +
-            "\n\n"
-        );
-        // Sample Logic //
-
-    }
 }
 //>>> Clean Arch / Inbound Adaptor

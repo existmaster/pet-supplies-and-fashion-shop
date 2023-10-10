@@ -1,8 +1,9 @@
-name: IsVanillaK8s
+name: Spring boot multitenancy partitioned
 rating: 5
-imageUrl: https://github.com/msa-ez/template-axon2/assets/130956306/56ef2255-4ffa-40e1-b3ae-9bb50c05c6e3
-templateName: isVanillaK8s
-description: Open-source container orchestration platform for managing and deploying containerized applications.
+imageUrl: https://github.com/kibum0405/topping-wijmo/assets/59447401/3cf4bb64-9128-4eae-8aba-7e70cb8b55fb
+templateName: spring-boot-multitenancy-partioned
+description: Data is efficiently partitioned to maintain independence among tenants in a partitioned spring-boot-multitenancy setup.
 depends:
+  - spring-boot-3
 tags:
-  - Kubernetes
+  - Multitenancy
