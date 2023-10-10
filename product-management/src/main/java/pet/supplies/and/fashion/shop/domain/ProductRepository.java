@@ -7,4 +7,4 @@ import pet.supplies.and.fashion.shop.domain.*;
 //<<< PoEAA / Repository
 @RepositoryRestResource(collectionResourceRel = "products", path = "products")
 public interface ProductRepository
-    extends PagingAndSortingRepository<Product, String> {}
+    extends PagingAndSortingRepository<Product, Long> {}

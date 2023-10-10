@@ -15,7 +15,8 @@ import pet.supplies.and.fashion.shop.domain.ProductPurchased;
 public class Order {
 
     @Id
-    private String id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
     private String productId;
 

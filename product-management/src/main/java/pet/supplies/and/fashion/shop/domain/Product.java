@@ -17,7 +17,8 @@ import pet.supplies.and.fashion.shop.domain.ProductSearched;
 public class Product {
 
     @Id
-    private String id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
     private String name;
 
